@@ -1,0 +1,276 @@
+<title>Real Time Image Identification App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <body>
+       
+        <center>
+            <h1>
+                CASE STUDY
+            </h1>
+            <ol>
+               
+                <div style="background-color: gray;" class="text_images_and_results col-xs-12">
+                    <li class="col-sm-4 col-xs-12">
+                        <b>Test Image - </b><img src="bottel.jpg" class="img-responsive">
+
+                    </li>
+                    <br><br>
+                    <h5 class=" col-sm-4 col-xs-12">Output on <b>Microsoft Azure</b>
+                        <span></span>
+<br><br>
+                    </h5>
+                    <h5 class="col-sm-4 col-xs-12">Output on <b>MobileNet Model</b>
+                        <span></span>
+                        <br><br>
+
+                    </h5>
+                    <br><br>
+                    <div class="mini-result col-xs-12">
+                        <h4>Result -</h4>
+                        <hr>
+                        <h4></h4>
+                    
+
+                    </div>
+                    <hr>
+                </div>
+            </ol>
+
+            <ol>
+               
+                <div style="background-color: gray;" class="text_images_and_results col-xs-12">
+                    <li class="col-sm-4 col-xs-12">
+                        <b>Test Image - </b><img src="cube.jpg" class="img-responsive">
+
+                    </li>
+                    <br><br>
+                    <h5 class=" col-sm-4 col-xs-12">Output on <b>Microsoft Azure</b>
+                        <span></span>
+<br><br>
+                    </h5>
+                    <h5 class="col-sm-4 col-xs-12">Output on <b>MobileNet Model</b>
+                        <span></span>
+                        <br><br>
+
+                    </h5>
+                    <br><br>
+                    <div class="mini-result col-xs-12">
+                        <h4>Result -</h4>
+                        <hr>
+                        <h4></h4>
+                    
+
+                    </div>
+                    <hr>
+                </div>
+            </ol>
+            <ol>
+               
+                <div style="background-color: gray;" class="text_images_and_results col-xs-12">
+                    <li class="col-sm-4 col-xs-12">
+                        <b>Test Image - </b><img src="cup.jpg" class="img-responsive">
+
+                    </li>
+                    <br><br>
+                    <h5 class=" col-sm-4 col-xs-12">Output on <b>Microsoft Azure</b>
+                        <span></span>
+<br><br>
+                    </h5>
+                    <h5 class="col-sm-4 col-xs-12">Output on <b>MobileNet Model</b>
+                        <span></span>
+                        <br><br>
+
+                    </h5>
+                    <br><br>
+                    <div class="mini-result col-xs-12">
+                        <h4>Result -</h4>
+                        <hr>
+                        <h4></h4>
+                    
+
+                    </div>
+                    <hr>
+                </div>
+            </ol>
+            <ol>
+               
+                <div style="background-color: gray;" class="text_images_and_results col-xs-12">
+                    <li class="col-sm-4 col-xs-12">
+                        <b>Test Image - </b><img src="mask.jpg" class="img-responsive">
+
+                    </li>
+                    <br><br>
+                    <h5 class=" col-sm-4 col-xs-12">Output on <b>Microsoft Azure</b>
+                        <span></span>
+<br><br>
+                    </h5>
+                    <h5 class="col-sm-4 col-xs-12">Output on <b>MobileNet Model</b>
+                        <span></span>
+                        <br><br>
+
+                    </h5>
+                    <br><br>
+                    <div class="mini-result col-xs-12">
+                        <h4>Result -</h4>
+                        <hr>
+                        <h4></h4>
+                    
+
+                    </div>
+                    <hr>
+                </div>
+            </ol>
+            <ol>
+               
+                <div style="background-color: gray;" class="text_images_and_results col-xs-12">
+                    <li class="col-sm-4 col-xs-12">
+                        <b>Test Image - </b><img src="shoe.jpg" class="img-responsive">
+
+                    </li>
+                    <br><br>
+                    <h5 class=" col-sm-4 col-xs-12">Output on <b>Microsoft Azure</b>
+                        <span></span>
+<br><br>
+                    </h5>
+                    <h5 class="col-sm-4 col-xs-12">Output on <b>MobileNet Model</b>
+                        <span></span>
+                        <br><br>
+
+                    </h5>
+                    <br><br>
+                    <div class="mini-result col-xs-12">
+                        <h4>Result -</h4>
+                        <hr>
+                        <h4></h4>
+                    
+
+                    </div>
+                    <hr>
+                </div>
+            </ol>
+            <ol>
+               
+                <div style="background-color: gray;" class="text_images_and_results col-xs-12">
+                    <li class="col-sm-4 col-xs-12">
+                        <b>Test Image - </b><img src="sisc.jpg" class="img-responsive">
+
+                    </li>
+                    <br><br>
+                    <h5 class=" col-sm-4 col-xs-12">Output on <b>Microsoft Azure</b>
+                        <span></span>
+<br><br>
+                    </h5>
+                    <h5 class="col-sm-4 col-xs-12">Output on <b>MobileNet Model</b>
+                        <span></span>
+                        <br><br>
+
+                    </h5>
+                    <br><br>
+                    <div class="mini-result col-xs-12">
+                        <h4></h4>
+                        <hr>
+                        <h4></h4>
+                    
+
+                    </div>
+                    <hr>
+                </div>
+            </ol>
+            <ol>
+               
+                <div style="background-color: gray;" class="text_images_and_results col-xs-12">
+                    <li class="col-sm-4 col-xs-12">
+                        <b>Test Image - </b><img src="controller.jpg" class="img-responsive">
+
+                    </li>
+                    <br><br>
+                    <h5 class=" col-sm-4 col-xs-12">Output on <b>Microsoft Azure</b>
+                        <span></span>
+<br><br>
+                    </h5>
+                    <h5 class="col-sm-4 col-xs-12">Output on <b>MobileNet Model</b>
+                        <span></span>
+                        <br><br>
+
+                    </h5>
+                    <br><br>
+                    <div class="mini-result col-xs-12">
+                        <h4>Result -</h4>
+                        <hr>
+                        <h4>
+                        </h4>
+                    
+
+                    </div>
+                    <hr>
+                </div>
+            </ol>
+            <ol>
+               
+                <div style="background-color: gray;" class="text_images_and_results col-xs-12">
+                    <li class="col-sm-4 col-xs-12">
+                        <b>Test Image - </b><img src="pencil.jpg" class="img-responsive">
+
+                    </li>
+                    <br><br>
+                    <h5 class=" col-sm-4 col-xs-12">Output on <b>Microsoft Azure</b>
+                        <span></span>
+<br><br>
+                    </h5>
+                    <h5 class="col-sm-4 col-xs-12">Output on <b>MobileNet Model</b>
+                        <span></span>
+                        <br><br>
+
+                    </h5>
+                    <br><br>
+                    <div class="mini-result col-xs-12">
+                        <h4>Result -</h4>
+                        <hr>
+                        <h4></h4>
+                    
+
+                    </div>
+                    <hr>
+                </div>
+            </ol>
+
+            
+            <div style="background-color: gray;" class="text_images_and_results col-xs-12">
+                <li class="col-sm-4 col-xs-12">
+                    <b>Test Image - </b><img src="box.jpg" class="img-responsive">
+
+                </li>
+                <br><br>
+                <h5 class=" col-sm-4 col-xs-12">Output on <b>Microsoft Azure</b>
+                    <span></span>
+<br><br>
+                </h5>
+                <h5 class="col-sm-4 col-xs-12">Output on <b>MobileNet Model</b>
+                    <span></span>
+                    <br><br>
+
+                </h5>
+                <br><br>
+                <div class="mini-result col-xs-12">
+                    <h4>Result -</h4>
+                    <hr>
+                    <h4></h4>
+                
+
+                </div>
+                <hr>
+            </div>
+        </ol>
+        </center>
+    </body>
